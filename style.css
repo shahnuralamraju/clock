@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&display=swap');
+
+*{
+    background-color: #260581;
+    /* background-color: #091924; */
+    padding: 0;
+    margin: 0;
+    z-index: 1;
+}
+.main-container{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.analog-clock{
+    padding: 20px;
+    width: 250px;
+    height: 250px;
+    background: url(clock.png) no-repeat center / 85%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    border: 10px solid #260581;
+    /* border: 10px solid #091924; */
+    box-shadow: 0 -15px 15px rgba(255,255,255,0.05),
+               inset 0 -15px 15px rgba(255,255,255,0.05),
+               0 15px 15px rgba(0,0,0,0.3),
+               inset 0 15px 15px rgba(0,0,0,0.3);
+    
+    position: relative;
+}
+
+#circle{
+    height: 5%;
+    width: 5%;
+    border-radius: 50%;
+    background-color: #ffffff;
+    z-index: 14;
+    position: absolute;
+}
+#hrHand{
+    width: 1.7%;
+    height: 20%;
+    background-color: #e91e63;
+    z-index: 7;
+    position: absolute;
+    top: 30%;
+    border-radius: 20% 20% 0 0;
+    transform-origin: bottom;
+}
+#minHand{
+    width: 1.4%;
+    height: 27%;
+    background-color: #009688;
+    z-index: 8;
+    position: absolute;
+    top: 23%;
+    border-radius: 20% 20% 0 0;
+    transform-origin: bottom;
+}
+#secHand{
+    width: 1%;
+    height: 32%;
+    background-color: #ffeb3b;
+    z-index: 9;
+    position: absolute;
+    top: 18%;
+    border-radius: 20% 20% 0 0;
+    transform-origin: bottom;
+}
+
+
+/* digital clock  */
+#digitalClock{
+    height: 60px;
+    width: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 35px;
+    font-weight: 600;
+    color:#e91e63 ;
+    font-family: Orbitron;
+    padding: 10px;
+    border: 10px solid #260581;
+    box-shadow: 0 -15px 15px rgba(255,255,255,0.05),
+               inset 0 -15px 15px rgba(255,255,255,0.05),
+               0 15px 15px rgba(5, 3, 3, 0.5),
+               inset 0 15px 15px rgba(0,0,0,0.4);
+}
