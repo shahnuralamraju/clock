@@ -15,10 +15,9 @@ const getTime = () => {
 
     if (hr > 12) {
         hr = hr - 12;
+        session = "PM"
     }
-    if (hr >= 12) {
-        session = "PM";
-    }
+  
 
     hr = (hr < 10) ? "0" + hr : hr;
     min = (min < 10) ? "0" + min : min;
